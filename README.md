@@ -47,7 +47,6 @@
    - Não se conectar a um recurso de computação do EC2.
    - Escolher a VPC criada para o projeto.
    - Grupo de sub-redes de banco de dados: default-vpc.
-   - Acesso público: Não.
    - Zona de disponibilidade: Sem preferência.
 
 ### Criação do EFS

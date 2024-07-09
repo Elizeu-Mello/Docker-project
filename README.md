@@ -13,6 +13,7 @@
 - Sugestão para o tráfego de internet sair pelo Load Balancer (Load Balancer Classic).
 - Pastas públicas e arquivos estáticos do WordPress devem utilizar o EFS (Elastic File System).
 - A aplicação WordPress precisa estar rodando na porta 80 ou 8080.
+---
 
 ### Portas utilizadas para o Security Group
 - HTTP: TCP 80
@@ -20,6 +21,7 @@
 - SSH: TCP 22
 - MySQL/Aurora: TCP 3306
 - NFS: TCP 2049
+---
 
 ### Configurações da VPC
 1. Criar VPC
@@ -153,3 +155,5 @@ sudo docker-compose up -d
    - Capacidade máxima desejada: 2
 5. Política de manutenção de instâncias:
    - Escolher um comportamento de substituição dependendo dos seus requisitos de disponibilidade
+##### O Auto scaling sera executado em data proxima a apresentaçao para evitar gasto..
+

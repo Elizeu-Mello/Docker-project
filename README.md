@@ -30,7 +30,6 @@
    - Número de sub-redes públicas: 2
    - Número de sub-redes privadas: 2
    - Gateways NAT: 1 (em uma AZ)
-   - Endpoints da VPC: Nenhum
 
 ### Criação e configurações do RDS
 1. Vá para o console da AWS e procure pelo serviço Amazon RDS.
@@ -114,10 +113,10 @@ sudo docker-compose up -d
    - Execute a instância
    - Não se esqueça de configurar um endpoint EC2 Connect Instance para se conectar ao terminal da instância
 
-1. Criar um Modelo de execução:
+2. Criar um Modelo de execução:
    - Dar um nome ao modelo
    - Repetir toda a configuração feita na criação da EC2 acima
-2. Em EC2, executar instância a partir do modelo:
+3. Em EC2, executar instância a partir do modelo:
    - Modificar somente as subnets para privada_2b
 
 ### Criação do Grupo de Destino
@@ -150,8 +149,8 @@ sudo docker-compose up -d
 3. Configurações adicionais:
    - Habilitar coleta de métricas de grupo no CloudWatch
 4. Escalabilidade:
-   - Capacidade mínima desejada: 1
-   - Capacidade máxima desejada: 2
+   - Capacidade mínima desejada: 2
+   - Capacidade máxima desejada: 4
 5. Política de manutenção de instâncias:
    - Escolher um comportamento de substituição dependendo dos seus requisitos de disponibilidade
 ##### O Auto scaling sera executado em data proxima a apresentaçao para evitar gasto..
